@@ -1,5 +1,7 @@
 <div style="display:flex; flex-direction: column; align-items: center;">
-    <img style="display: block" src="https://raw.githubusercontent.com/hugolcouto/hugolcouto/main/assets/avatar.png" width="100">
+    <div align="center">
+        <img style="display: block" src="https://raw.githubusercontent.com/hugolcouto/hugolcouto/main/assets/avatar.png" width="100">
+    </div>
     <h1 align="center">Hi! I'm Hugo</h1>
 </div>
 
