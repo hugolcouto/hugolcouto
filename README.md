@@ -1,5 +1,6 @@
 <h1 align="center">
 Hi! I'm Hugo
+<img src="https://raw.githubusercontent.com/hugolcouto/hugolcouto/main/assets/avatar.png" width="100" style="display: block; margin: 0 auto">
 </h1>
 
 #### Front end developer based in Angra dos Reis - RJ but currently working in [Webhub](https://webhub.com.br/), based in São Paulo - SP
