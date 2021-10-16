@@ -46,6 +46,5 @@ You can contact me in [contato@hugocouto.dev](mailto:contato@hugocouto.dev). ğŸ˜
 ### What I'm currently studing
 <div style="display:flex; flex-wrap: wrap; align-items: flex-start;">
     <img src="https://img.shields.io/badge/Next%20JS-00d1f7?style=for-the-badge&logo=react&logoColor=white">
-    <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white">
     <img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white">
 </div>
