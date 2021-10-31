@@ -16,6 +16,32 @@
 	color: var(--white);
 }
 
+::-moz-selection {
+	color: var(--white);
+	background: var(--primary);
+}
+
+::selection {
+	color: var(--white);
+	background: var(--primary);
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 184, 147, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background-color: var(--primary);
+}
+
 .link {
 	color: var(--primary);
 	transition: 0.3s;
