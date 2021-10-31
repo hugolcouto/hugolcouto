@@ -1,4 +1,4 @@
 $(document).ready(function() {
-	console.log('O jogo');
+	console.log('Cuidado com essa curiosidade aí, hein 👀');
 	particlesJS.load('particles-js', 'assets/js/particles.json');
 })
