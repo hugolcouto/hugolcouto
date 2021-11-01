@@ -1,6 +1,7 @@
 :root {
 	--primary: #00b894;
 	--secondary: #f267de;
+	--secondary2: #8b3a7f;
 	--white: #ecf0f1;
 	--dark: #111;
 
@@ -40,13 +41,6 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
 	background-color: var(--primary);
-}
-
-codersrank-summary {
-	--header-bg-color: var(--primary);
-	--name-font-size: 20px;
-	margin-bottom: 24px;
-	font-family: sans-serif;
 }
 
 .link {
@@ -109,15 +103,6 @@ main {
 	font-family: sans-serif;
 }
 
-hr {
-	display: block;
-	height: 1px;
-	border: none;
-	width: 100%;
-	background-color: var(--primary);
-	margin: 30px 0;
-}
-
 .container {
 	width: 1100px;
 	margin-bottom: 32px;
@@ -137,14 +122,24 @@ hr {
 	}
 }
 
+.header {
+	margin-bottom: 64px;
+}
+
 .section-heading {
 	font-family: 'Press Start 2P', cursive;
 	font-weight: 400;
 	margin-bottom: 22px;
 	font-size: 18px;
+	line-height: 26px;
 	border-bottom: 1px solid var(--primary);
 	padding-bottom: 12px;
 	max-width: 400px;
+}
+
+.bio,
+.languages {
+	margin-bottom: 36px;
 }
 
 .languages > h5 {
