@@ -1,5 +1,5 @@
 <div align="center">
-    <img style="display: block" src="https://raw.githubusercontent.com/hugolcouto/hugolcouto/main/assets/download20210905004504.png" width="250">
+    <img style="display: block" src="https://raw.githubusercontent.com/hugolcouto/hugolcouto/main/assets/images/logo.png" width="250">
 </div>
 <h1 align="center">Hi! I'm Hugo</h1>
 
