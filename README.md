@@ -9,7 +9,7 @@
 
 ### About me
 
-29yo front-end developer with some knowledge in back-end using Laravel. Currently I'm focused in improve my skills in both areas, focusing in React and Laravel frameworks.
+30yo front-end developer with some knowledge in back-end using Laravel. Currently I'm focused in improve my skills in both areas, focusing in React and Laravel frameworks.
 
 I also video games a lot! So naturally I have interest in gaming development as well. In my free time, I study Unity Engine (C#).
 
