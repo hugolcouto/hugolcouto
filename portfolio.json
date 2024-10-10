@@ -1,0 +1,37 @@
+{
+    "porfolio": [
+        {
+            "id": "meu-retiro",
+            "title": "Meu Retiro",
+            "description": "Marketplace de retiros espirituais e bem estar feito em Next JS",
+            "img_alt": "Print da home do site Meuretiro",
+            "url": "https://meuretiro.com.br/",
+            "image": "/assets/uploads/meuretiro.webp"
+        },
+        {
+            "id": "sw-code",
+            "title": "SW Code",
+            "description": "Aplicativo desenvolvido em React Native/Expo que cria tags de audios e os associa a uma informação, tal qual um QR Code",
+            "img_alt": "Print da home do site SWCode",
+            "url": "https://swcode.co/pt-BR",
+            "image": "/assets/uploads/swcode.webp"
+        },
+        {
+            "id": "maete-imoveis",
+            "title": "Maete Imoveis",
+            "description": "Site de imóveis para locação e aluguel desenvolvido em PHP",
+            "img_alt": "Print da home do site Maeteimoveis",
+            "url": "https://maeteimoveis.com.br/",
+            "image": "/assets/uploads/maeteimoveis.webp"
+        },
+        {
+            "id": "manga-leap",
+            "title": "Mangá Leap",
+            "description": "Blog de cultura otaku e gamer feito em Wordpress. Aqui o foco do desenvolvimento foi a performance e SEO",
+            "img_alt": "Print da home do site Manga Leap",
+            "url": "https://mangaleap.com.br/",
+            "image": "/assets/uploads/mangaleap.webp"
+
+        }
+    ]
+}

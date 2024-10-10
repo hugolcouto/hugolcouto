@@ -1,394 +1,510 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Couto - Desenvolvedor web</title>
 
-		<title>Oi! Eu sou o Hugo - Dev front-end</title>
-		<!-- O jogo -->
+    <!-- Google fonts e fontawesome -->
+    <script src="https://kit.fontawesome.com/80370cd9ed.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-		<script src="https://use.fontawesome.com/454dd95cc7.js"></script>
-		<link
-			rel="apple-touch-icon"
-			sizes="57x57"
-			href="assets/icon/apple-icon-57x57.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="60x60"
-			href="assets/icon/apple-icon-60x60.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="72x72"
-			href="assets/icon/apple-icon-72x72.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="76x76"
-			href="assets/icon/apple-icon-76x76.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="114x114"
-			href="assets/icon/apple-icon-114x114.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="120x120"
-			href="assets/icon/apple-icon-120x120.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="144x144"
-			href="assets/icon/apple-icon-144x144.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="152x152"
-			href="assets/icon/apple-icon-152x152.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="assets/icon/apple-icon-180x180.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="192x192"
-			href="assets/icon/android-icon-192x192.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="assets/icon/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="96x96"
-			href="assets/icon/favicon-96x96.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="assets/icon/favicon-16x16.png"
-		/>
-		<link rel="manifest" href="assets/icon/manifest.json" />
-		<meta name="msapplication-TileColor" content="#00b894" />
-		<meta
-			name="msapplication-TileImage"
-			content="assets/icon/ms-icon-144x144.png"
-		/>
+    <!-- Meta tags -->
+    <link
+        rel="apple-touch-icon"
+        sizes="57x57"
+        href="assets/icon/apple-icon-57x57.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="60x60"
+        href="assets/icon/apple-icon-60x60.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="72x72"
+        href="assets/icon/apple-icon-72x72.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="76x76"
+        href="assets/icon/apple-icon-76x76.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="114x114"
+        href="assets/icon/apple-icon-114x114.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="120x120"
+        href="assets/icon/apple-icon-120x120.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="144x144"
+        href="assets/icon/apple-icon-144x144.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="152x152"
+        href="assets/icon/apple-icon-152x152.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/icon/apple-icon-180x180.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="assets/icon/android-icon-192x192.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/icon/favicon-32x32.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="96x96"
+        href="assets/icon/favicon-96x96.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="assets/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/icon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#00b894" />
+    <meta
+        name="msapplication-TileImage"
+        content="assets/icon/ms-icon-144x144.png"
+    />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="assets/css/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-			integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
-			crossorigin="anonymous"
-		/>
+    <meta
+        name="description"
+        content="Olá! Eu sou o Hugo. Desenvolvedor fullstack desde 2017, trabalho com as linguagens PHP e JS, utilizando ferramentas como React, Laravel e Vue."
+    />
+    <meta
+        name="keywords"
+        content="Hugo Couto, Hugo, hugolcouto, dev, desenvolvedor, front-end, frontend, back-end, backend, fullstack, desenvolvimento, sites, site, app, aplicativo, aplicativos, games, retrogaming"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://hugocouto.dev" />
+    <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="Portuguese" />
+    <meta name="theme-color" content="#00b894" />
 
-		<meta
-			name="description"
-			content="Desenvolvedor front-end situado em Angra dos Reis - RJ, mas que atualmente trabalha na empresa Webhub situada em São Paulo - SP"
-		/>
-		<meta
-			name="keywords"
-			content="Hugo Couto, Hugo, dev, desenvolvedor, front-end, frontend, desenvolvimento, sites, site, games, retrogaming"
-		/>
-		<meta name="robots" content="index, follow" />
-		<meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="language" content="Portuguese" />
-		<meta name="theme-color" content="#00b894" />
+    <meta property="og:url" content="https://hugocouto.dev" />
+    <meta property="og:type" content="website" />
+    <meta
+        property="og:title"
+        content="Hugo Couto - Desenvolvedor fullstack"
+    />
+    <meta
+        property="og:description"
+        content="Olá! Eu sou o Hugo. Desenvolvedor fullstack desde 2017, trabalho com as linguagens PHP e JS, utilizando ferramentas como React, Laravel e Vue."
+    />
+    <meta property="og:image" content="http://localhost:3000/assets/images/og-img.jpg" />
+    <meta property="og:image:width" content="100" />
+    <meta property="og:image:height" content="100" />
+    <meta property="og:locale" content="pt_BR" />
+    
+    <!-- CSS -->
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<meta property="og:url" content="https://hugocouto.dev" />
-		<meta property="og:type" content="website" />
-		<meta
-			property="og:title"
-			content="Hugo Couto - Desenvolvedor front-end"
-		/>
-		<meta
-			property="og:description"
-			content="Desenvolvedor front-end situado em Angra dos Reis - RJ, mas que atualmente trabalha na empresa Webhub situada em São Paulo - SP"
-		/>
-		<meta property="og:image" content="assets/images/logo.png" />
-		<meta property="og:image:width" content="100" />
-		<meta property="og:image:height" content="100" />
-		<meta property="og:locale" content="pt_BR" />
+        :root {
+            color-scheme: light dark;
+            --dark: #010203;
+            --dark-gray: #2D2D2D;
+            --light: #EFE9E5;
+            --light-gray: #c4c4c4;
+            --primary: #00b894;
+            --secondary-light: #ff9f1c;
+            --secondary-dark: #ff4d88;
+            --error: #e71d36;
+        }
 
-		<meta property="twitter:site" content="hugolcouto" />
-		<meta property="twitter:card" content="summary" />
-		<meta
-			property="twitter:title"
-			content="Hugo Couto - Desenvolvedor front-end"
-		/>
-		<meta
-			property="twitter:description"
-			content="Desenvolvedor front-end situado em Angra dos Reis - RJ, mas que atualmente trabalha na empresa Webhub situada em São Paulo - SP"
-		/>
-		<meta property="twitter:image" content="assets/images/logo.png" />
-	</head>
-	<body>
-		<div id="particles-js"></div>
-		<main class="container">
-			<header class="header">
-				<img src="assets/images/logo.png" alt="Logo" class="avatar" />
-				<h1 class="greetings">Oi, eu sou o Hugo</h1>
-				<h4 class="description">
-					Desenvolvedor front-end situado em Angra dos Reis - RJ, mas
-					que atualmente trabalha na empresa
-					<a class="link" href="http://webhub.com.br/" target="_blank"
-						>Webhub</a
-					>, situada em São Paulo - SP
-				</h4>
-				<nav class="social">
-					<a
-						class="social__link"
-						target="_blank"
-						title="Github"
-						href="https://github.com/hugolcouto"
-					>
-						<i class="fa fa-github"></i>
-					</a>
-					<a
-						class="social__link"
-						target="_blank"
-						title="Twitter"
-						href="https://twitter.com/hugolcouto"
-					>
-						<i class="fa fa-twitter"></i>
-					</a>
-					<a
-						class="social__link"
-						target="_blank"
-						title="Linkedin"
-						href="https://linkedin.com/in/hugolcouto"
-					>
-						<i class="fa fa-linkedin"></i>
-					</a>
-					<a
-						class="social__link"
-						target="_blank"
-						title="Instagram"
-						href="https://instagram.com/hugolcouto"
-					>
-						<i class="fa fa-instagram"></i>
-					</a>
-				</nav>
-			</header>
-			<article class="bio">
-				<h3 class="section-heading">Quem sou eu?</h3>
-				<p>
-					Desenvolvedor front-end de 29 anos com algum conhecimento em
-					back-end usando <strong>Laravel</strong>. Atualmente meu
-					foco está em aprimorar minhas habilidades em front-end e
-					mobile, estudando principalmente o framework
-					<strong>React</strong> e suas variantes (<strong
-						>Next JS</strong
-					>e <strong>React Native</strong>).
-				</p>
+        html {
+            font-size: 18px;
+        }
 
-				<p>
-					Também gosto <strong>muito</strong> de video games! Então,
-					naturalmente, eu tenho bastante interesse em desenvolvimento
-					de jogos. Nas minhas horas livres, eu costumo estudar a
-					engine Unity (C#).
-				</p>
+        *:focus {
+            outline: 0;
+        }
 
-				<p>
-					Você pode me mandar alô em
-					<a
-						class="link"
-						href="mailto:contato@hugocouto.dev"
-						target="_blank"
-					>
-						contato@hugocouto.dev </a
-					>. 😄
-				</p>
-			</article>
+        body {
+            background-color: light-dark(var(--light), var(--dark));
+            color: light-dark(var(--dark), var(--light));
+            font-family: "Quicksand", sans-serif !important;
+        }
 
-			<article class="languages container">
-				<h3 class="section-heading">Tecnologias</h3>
-				<h5>Linguagens</h5>
-				<div>
-					<a
-						href="https://www.w3schools.com/html/default.asp"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-							alt="HTML"
-						/>
-					</a>
-					<a
-						href="https://www.w3schools.com/css/default.asp"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/-CSS-026EB6?logo=css3&logoColor=white&style=for-the-badge"
-							alt="CSS"
-						/>
-					</a>
-					<a
-						href="https://eloquentjavascript.net/Eloquent_JavaScript.pdf"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
-							alt="Javascript"
-						/>
-					</a>
-					<a
-						href="https://www.youtube.com/watch?v=pWG7ajC_OVo&list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/-PHP-777bb4?logo=php&logoColor=white&style=for-the-badge"
-							alt="PHP"
-						/>
-					</a>
-					<a
-						href="https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge"
-							alt="Typescript"
-						/>
-					</a>
-					<a
-						href="https://www.youtube.com/watch?v=St5B7hnMLjg&list=PL4cUxeGkcC9iEwigam3gTjU_7IA3W2WZA"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/-SCSS-C76395?logo=sass&logoColor=white&style=for-the-badge"
-							alt="SCSS / SASS"
-						/>
-					</a>
-				</div>
+        section {
+            margin-bottom: 60px;
+        }
 
-				<h5>Front-end</h5>
-				<div>
-					<a
-						href="https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/React-00D1F7?style=for-the-badge&logo=react&logoColor=white"
-							alt="React"
-						/>
-					</a>
-					<a
-						href="https://treinamento.vuejsbrasil.org/"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/Vue.js-3FB27F?style=for-the-badge&logo=vue.js&logoColor=white"
-							alt="Vue"
-						/>
-					</a>
-					<a
-						href="https://www.youtube.com/watch?v=02zO0hZmwnw"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"
-							alt="Styled components"
-						/>
-					</a>
-				</div>
+        .main {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
 
-				<h5>Back-end</h5>
-				<div>
-					<a
-						href="https://www.youtube.com/watch?v=376vZ1wNYPA"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white"
-							alt="Laravel"
-						/>
-					</a>
-				</div>
+        @media screen and (max-width: 860px) {
+            .main {
+                max-width: 95%;
+                margin: 0 auto;
+            }
+        }
 
-				<h5>O que ando aprendendo ultimamente</h5>
-				<div>
-					<a
-						href="https://www.youtube.com/watch?v=ur6I5m2nTvk&list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/React%20Native-00d1f7?style=for-the-badge&logo=react&logoColor=white"
-							alt="React Native"
-						/>
-					</a>
-					<a
-						href="https://www.youtube.com/watch?v=MFuwkrseXVE"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/Next%20JS-000000?style=for-the-badge&logo=next.js&logoColor=white"
-							alt="Next JS"
-						/>
-					</a>
-					<a
-						href="https://www.youtube.com/watch?v=g6-y6qdeyQ4&list=PLGmYIROty-5YhzMWqgAIXlPIRU2_tcz0l"
-						target="_blank"
-						class="lang-link"
-					>
-						<img
-							src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white"
-							alt="Unity"
-						/>
-					</a>
-				</div>
-			</article>
-			<article class="bio">
-				<h3 class="section-heading">Projetos</h3>
-				<section class="project-grid">
-					<a
-						href="https://marketplace.visualstudio.com/items?itemName=hugolcouto.dark-mint-vscode-theme"
-						target="_blank"
-						class="project-link"
-					>
-						<figure>
-							<img
-								src="https://raw.githubusercontent.com/hugolcouto/dark-mint-vscode-theme/master/images/screenshot.png"
-								alt="Printscreen do tema Dark Mint para VSCode"
-							/>
-							<figcaption>
-								<span>Dark Mint VSCode</span>
-							</figcaption>
-						</figure>
-					</a>
-				</section>
-			</article>
-		</main>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="assets/js/particles.min.js"></script>
-		<script src="assets/js/app.js"></script>
-	</body>
+        .heading {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .heading > h1,
+        .heading > h2 {
+            line-height: 100%;
+            margin: 0;
+        }
+
+        .heading > h1 {
+            color: light-dark(var(--dark), var(--light));
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .heading > h1 > em {
+            font-style: normal;
+            color: var(--primary);
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        h3::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 400px;
+            height: 2px;
+            background-color: var(--primary);
+            display: block;
+        }
+
+        .about > article > p {
+            text-indent: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio > ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            width: 100%;
+            padding: 0;
+        }
+
+        @media screen and (max-width: 560px) {
+            .portfolio > ul {
+                grid-template-columns: 100%;
+            }
+        }
+
+        /* Componentes */
+        .btn {
+            background-color: var(--primary);
+            color: var(--dark);
+            font-weight: 600;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: .9rem;
+            cursor: pointer;
+            transition: 300ms;
+            text-align: center;
+            border: none;
+            appearance: none;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            background-color: light-dark(var(--light-gray), var(--dark-gray));
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: .9rem;
+            border: 1px solid light-dark(var(--dark), var(--light));
+        }
+
+        textarea {
+            min-height: 300px;
+            resize: vertical;
+        } 
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: var(--primary);
+            outline: 0;
+        }
+
+        @media screen and (max-width: 560px) {
+            .btn {
+                padding: 20px 20px;
+            }
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+            transition: 300ms;
+        }
+
+        .btn:focus {
+            background-color: light-dark(var(--secondary-light), var(--secondary-dark));
+        }
+
+        .portfolio__card {
+            background: var(--dark-gray);
+            background-color: light-dark(var(--light-gray), var(--dark-gray));
+            backdrop-filter: blur(10px);
+            padding: 8px;
+            border-radius: 6px;
+            display: grid;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .portfolio__card > img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 4px;
+        }
+
+        .portfolio__card > article {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .portfolio__card > article > h4 {
+            font-size: 1rem;
+        }
+
+        .portfolio__card > article > p {
+            font-size: .8rem;
+        }
+        
+        .portfolio__card > nav {
+            align-self: flex-end;
+        }
+        
+        .portfolio__card > nav > a {
+            width: 100%;
+            display: block;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 20px 0;
+        }
+
+        .navbar__nav {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .navbar__nav__links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar__nav__social {
+            display: flex;
+            gap: 10px;
+            align-items: center ;
+        }
+
+        .navbar__nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</head>
+<body>
+    <header class="navbar">
+        <svg width="60" height="32.007" viewBox="0 0 15.875 8.469" xmlns="http://www.w3.org/2000/svg" data-v-inspector="components/brand/logo.vue:2:3"><g data-v-inspector="components/brand/logo.vue:3:5"><g fill="#00b893" data-v-inspector="components/brand/logo.vue:4:7"><path d="M1.967 5.021L0 3.51v1.51h.002L0 5.023l.487.383.002.009.005-.004 3.86 3.036V6.933z" data-v-inspector="components/brand/logo.vue:5:9"/><path d="M4.353.019L.032 3.484l.963.74 3.358-2.69z" data-v-inspector="components/brand/logo.vue:6:9"/><path d="M9.437.019H7.925l-.62 3.49h1.517zM7.04 5.02l-.383 2.185h.394l-.092.437c-.114.54-.25.537-.473.533l-.047.27c.86.01 1.366.124 1.79-1.88l.326-1.543z" data-v-inspector="components/brand/logo.vue:7:9"/><path d="M15.824 4.997l-.963-.74-3.339 2.674v1.515z" data-v-inspector="components/brand/logo.vue:8:9"/><path d="M11.522.019v1.512l3.346 2.68.987.76.02-.016V3.444h-.001l.001-.002-.486-.382-.002-.01-.005.004z" data-v-inspector="components/brand/logo.vue:9:9"/></g></g></svg>
+        <div class="navbar__nav">
+            <nav class="navbar__nav__links">
+                <a href="#sobre-mim">Sobre mim</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <nav class="navbar__nav__social">
+                <a href="" target="_blank" title="Linkedin" aria-label="Linkedin">
+                    <box-icon name='linkedin' type='logo' size="sm" color="var(--light)"></box-icon>
+                </a>
+                <a href="" target="_blank" title="Github" aria-label="Github">
+                    <box-icon name='github' type='logo' size="sm" color="var(--light)"></box-icon>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <header class="heading">
+            <h1>Oi! Eu sou o <em>Hugo</em></h1>
+            <h2>Desenvolvedor fullstack</h2>
+            <img src="" alt="">
+        </header>
+        <section class="about">
+            <article>
+                <h3>Quem sou eu?</h3>
+                <p>
+                    Sou natural da cidade de Angra dos Reis, litoral sul do estado do Rio de Janeiro e trabalho com desenvolvimento desde 2017, quando comecei a desenvolver para a web utilizando a plataforma Wordpress. 
+                </p>
+                <p>
+                    Formado em Análise e Desenvolvimento de Sistemas e atualmente cursando MBA em Engenharia de Software, atualmente atudo desenvolvendo soluções utilizando as tecnologias Next, Nuxt, React Native/Expo, Wordpress e Laravel.
+                </p>
+            </article>
+        </section>
+        <section class="portfolio">
+            <h3>Alguns dos meus trabalhos</h3>
+            <ul id="portfolio">
+                <li class="portfolio__card">
+                    <img src="https://placehold.co/600x400" alt="${item.title}">
+                    <article>
+                        <h4>${item.title}</h4>
+                        <p>${item.description}</p>
+                        <nav>
+                            <a href="${item.url}" target="_blank" class="btn">Visitar</a>
+                        </nav>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h3>Gostou? Que tal entrar em contato?</h3>
+            <form class="contact-form" id="my-form" action="https://formspree.io/f/myzygqkj" method="POST">
+                <div class="input-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="input-group">    
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button class="btn" id="my-form-button">Submit</button>
+                <p id="my-form-status"></p>
+                </form>
+        </section>
+    </main>
+    <footer>
+        <!-- Aqui entra o footer -->
+    </footer>
+
+    <script>
+        fetch('portfolio.json')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('portfolio').innerHTML = data.porfolio.map(item => {
+                    return `
+                        <li class="portfolio__card">
+                            <img src="${item.image}" alt="${item.img_alt}">
+                            <article>
+                                <h4>${item.title}</h4>
+                                <p>${item.description}</p>
+                            </article>
+                            <nav>
+                                <a href="${item.url}" target="_blank" class="btn" title="Abrir ${item.title} em nova aba">
+                                    Visitar ${item.title}
+                                </a>
+                            </nav>
+                        </li>
+                    `
+                }).join("");
+            })
+
+
+            // Form
+            var form = document.getElementById("my-form");
+            
+            async function handleSubmit(event) {
+                event.preventDefault();
+                var status = document.getElementById("my-form-status");
+                var data = new FormData(event.target);
+                fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+                }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Thanks for your submission!";
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        status.innerHTML = "Oops! There was a problem submitting your form"
+                    }
+                    })
+                }
+                }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+                });
+            }
+            form.addEventListener("submit", handleSubmit)
+    </script>
+</body>
 </html>
