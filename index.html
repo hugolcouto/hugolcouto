@@ -139,6 +139,7 @@
 
         html {
             font-size: 18px;
+            scroll-behavior: smooth;
         }
 
         *:focus {
@@ -153,6 +154,7 @@
 
         section {
             margin-bottom: 60px;
+            scroll-margin-top: 100px;
         }
 
         .main {
@@ -164,13 +166,22 @@
         @media screen and (max-width: 860px) {
             .main {
                 max-width: 95%;
-                margin: 0 auto;
+                margin: 120px auto 0;
             }
         }
 
         .heading {
             text-align: center;
             margin-bottom: 80px;
+        }
+
+        .heading > img {
+            border-radius: 1000px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            margin-top: 30px;
         }
 
         .heading > h1,
@@ -342,11 +353,22 @@
 
         .navbar {
             display: flex;
+            position: sticky;
+            top: 0;
+            background-color: light-dark(var(--light), var(--dark));
+            z-index: 3;
+            width: 100%;
             justify-content: space-between;
             align-items: center;
             max-width: 1000px;
             margin: 0 auto;
-            padding: 20px 20px 0;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 560px) {
+            .navbar {
+                display: none;
+            }
         }
 
         .navbar__nav {
@@ -371,13 +393,35 @@
             text-decoration: none;
             font-weight: 600;
         }
+
+        .footer {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-direction: column;
+        }
+
+        .footer  p {
+            text-align: center;
+            font-size: .6rem;
+        }
+
+        .footer_social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer_social a {
+            text-decoration: none;
+        }
     </style>
      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 </head>
 <body>
     <header class="navbar">
-        <svg width="60" height="32.007" viewBox="0 0 15.875 8.469" xmlns="http://www.w3.org/2000/svg" data-v-inspector="components/brand/logo.vue:2:3"><g data-v-inspector="components/brand/logo.vue:3:5"><g fill="#00b893" data-v-inspector="components/brand/logo.vue:4:7"><path d="M1.967 5.021L0 3.51v1.51h.002L0 5.023l.487.383.002.009.005-.004 3.86 3.036V6.933z" data-v-inspector="components/brand/logo.vue:5:9"/><path d="M4.353.019L.032 3.484l.963.74 3.358-2.69z" data-v-inspector="components/brand/logo.vue:6:9"/><path d="M9.437.019H7.925l-.62 3.49h1.517zM7.04 5.02l-.383 2.185h.394l-.092.437c-.114.54-.25.537-.473.533l-.047.27c.86.01 1.366.124 1.79-1.88l.326-1.543z" data-v-inspector="components/brand/logo.vue:7:9"/><path d="M15.824 4.997l-.963-.74-3.339 2.674v1.515z" data-v-inspector="components/brand/logo.vue:8:9"/><path d="M11.522.019v1.512l3.346 2.68.987.76.02-.016V3.444h-.001l.001-.002-.486-.382-.002-.01-.005.004z" data-v-inspector="components/brand/logo.vue:9:9"/></g></g></svg>
+        <svg width="60" height="32.007" viewBox="0 0 15.875 8.469" xmlns="http://www.w3.org/2000/svg"><g><g fill="light-dark(var(--dark), var(--light))" data-v-inspector="components/brand/logo.vue:4:7"><path d="M1.967 5.021L0 3.51v1.51h.002L0 5.023l.487.383.002.009.005-.004 3.86 3.036V6.933z" data-v-inspector="components/brand/logo.vue:5:9"/><path d="M4.353.019L.032 3.484l.963.74 3.358-2.69z" data-v-inspector="components/brand/logo.vue:6:9"/><path d="M9.437.019H7.925l-.62 3.49h1.517zM7.04 5.02l-.383 2.185h.394l-.092.437c-.114.54-.25.537-.473.533l-.047.27c.86.01 1.366.124 1.79-1.88l.326-1.543z" data-v-inspector="components/brand/logo.vue:7:9"/><path d="M15.824 4.997l-.963-.74-3.339 2.674v1.515z" data-v-inspector="components/brand/logo.vue:8:9"/><path d="M11.522.019v1.512l3.346 2.68.987.76.02-.016V3.444h-.001l.001-.002-.486-.382-.002-.01-.005.004z" data-v-inspector="components/brand/logo.vue:9:9"/></g></g></svg>
         <div class="navbar__nav">
             <nav class="navbar__nav__links">
                 <a href="#sobre-mim">Sobre mim</a>
@@ -385,10 +429,10 @@
                 <a href="#contato">Contato</a>
             </nav>
             <nav class="navbar__nav__social">
-                <a href="" target="_blank" title="Linkedin" aria-label="Linkedin">
+                <a href="https://www.linkedin.com/in/hugolcouto/" target="_blank" title="Linkedin" aria-label="Linkedin">
                     <box-icon name='linkedin' type='logo' size="sm" color="var(--light)"></box-icon>
                 </a>
-                <a href="" target="_blank" title="Github" aria-label="Github">
+                <a href="https://github.com/hugolcouto" target="_blank" title="Github" aria-label="Github">
                     <box-icon name='github' type='logo' size="sm" color="var(--light)"></box-icon>
                 </a>
             </nav>
@@ -399,9 +443,9 @@
         <header class="heading">
             <h1>Oi! Eu sou o <em>Hugo</em></h1>
             <h2>Desenvolvedor fullstack</h2>
-            <img src="" alt="">
+            <img src="assets/images/hugo.webp" alt="">
         </header>
-        <section class="about">
+        <section class="about" id="sobre-mim">
             <article>
                 <h3>Quem sou eu?</h3>
                 <p>
@@ -412,9 +456,9 @@
                 </p>
             </article>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h3>Alguns dos meus trabalhos</h3>
-            <ul id="portfolio">
+            <ul id="portfolio-content">
                 <li class="portfolio__card">
                     <img src="https://placehold.co/600x400" alt="${item.title}">
                     <article>
@@ -427,7 +471,7 @@
                 </li>
             </ul>
         </section>
-        <section class="contact">
+        <section class="contact" id="contato">
             <h3>Gostou? Que tal entrar em contato?</h3>
             <form class="contact-form" id="my-form" action="https://formspree.io/f/myzygqkj" method="POST">
                 <div class="input-group">
@@ -447,15 +491,23 @@
                 </form>
         </section>
     </main>
-    <footer>
-        <!-- Aqui entra o footer -->
+    <footer class="footer">
+        <nav class="footer_social">
+            <a href="https://www.linkedin.com/in/hugolcouto/" target="_blank" title="Linkedin" aria-label="Linkedin">
+                <box-icon name='linkedin' type='logo' size="sm" color="var(--light)"></box-icon>
+            </a>
+            <a href="https://github.com/hugolcouto" target="_blank" title="Github" aria-label="Github">
+                <box-icon name='github' type='logo' size="sm" color="var(--light)"></box-icon>
+            </a>
+        </nav>
+        <p>&copy; <span id="year"></span> Hugo Couto. Todos os direitos reservados</p>
     </footer>
-
+ 
     <script>
         fetch('portfolio.json')
             .then(res => res.json())
             .then(data => {
-                document.getElementById('portfolio').innerHTML = data.porfolio.map(item => {
+                document.getElementById('portfolio-content').innerHTML = data.porfolio.map(item => {
                     return `
                         <li class="portfolio__card">
                             <img src="${item.image}" alt="${item.img_alt}">
@@ -473,38 +525,39 @@
                 }).join("");
             })
 
+        document.getElementById('year').innerHTML = new Date().getFullYear();
 
-            // Form
-            var form = document.getElementById("my-form");
-            
-            async function handleSubmit(event) {
-                event.preventDefault();
-                var status = document.getElementById("my-form-status");
-                var data = new FormData(event.target);
-                fetch(event.target.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-                }).then(response => {
-                if (response.ok) {
-                    status.innerHTML = "Thanks for your submission!";
-                    form.reset()
-                } else {
-                    response.json().then(data => {
-                    if (Object.hasOwn(data, 'errors')) {
-                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                    } else {
-                        status.innerHTML = "Oops! There was a problem submitting your form"
-                    }
-                    })
-                }
-                }).catch(error => {
-                status.innerHTML = "Oops! There was a problem submitting your form"
-                });
+        // Form
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
             }
-            form.addEventListener("submit", handleSubmit)
+            }).then(response => {
+            if (response.ok) {
+                status.innerHTML = "Thanks for your submission!";
+                form.reset()
+            } else {
+                response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                    status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+                })
+            }
+            }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
     </script>
 </body>
 </html>
