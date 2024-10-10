@@ -1,1 +1,559 @@
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Hugo Couto - Desenvolvedor web</title><link rel="apple-touch-icon" sizes="57x57" href="assets/icon/apple-icon-57x57.png" /><link rel="apple-touch-icon" sizes="60x60" href="assets/icon/apple-icon-60x60.png" /><link rel="apple-touch-icon" sizes="72x72" href="assets/icon/apple-icon-72x72.png" /><link rel="apple-touch-icon" sizes="76x76" href="assets/icon/apple-icon-76x76.png" /><link rel="apple-touch-icon" sizes="114x114" href="assets/icon/apple-icon-114x114.png" /><link rel="apple-touch-icon" sizes="120x120" href="assets/icon/apple-icon-120x120.png" /><link rel="apple-touch-icon" sizes="144x144" href="assets/icon/apple-icon-144x144.png" /><link rel="apple-touch-icon" sizes="152x152" href="assets/icon/apple-icon-152x152.png" /><link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-icon-180x180.png" /><link rel="icon" type="image/png" sizes="192x192" href="assets/icon/android-icon-192x192.png" /><link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="96x96" href="assets/icon/favicon-96x96.png" /><link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png" /><link rel="manifest" href="assets/icon/manifest.json" /><meta name="msapplication-TileColor" content="#00b894" /><meta name="msapplication-TileImage" content="assets/icon/ms-icon-144x144.png" /><meta name="description" content="Olá! Eu sou o Hugo. Desenvolvedor fullstack desde 2017, trabalho com as linguagens PHP e JS, utilizando ferramentas como React, Laravel e Vue." /><meta name="keywords" content="Hugo Couto, Hugo, hugolcouto, dev, desenvolvedor, front-end, frontend, back-end, backend, fullstack, desenvolvimento, sites, site, app, aplicativo, aplicativos, games, retrogaming" /><meta name="robots" content="index, follow" /><link rel="canonical" href="https://hugocouto.dev" /><meta httpEquiv="Content-Type" content="text/html; charset=utf-8" /><meta name="language" content="Portuguese" /><meta name="theme-color" content="#00b894" /><meta property="og:url" content="https://hugocouto.dev" /><meta property="og:type" content="website" /><meta property="og:title" content="Hugo Couto - Desenvolvedor fullstack" /><meta property="og:description" content="Olá! Eu sou o Hugo. Desenvolvedor fullstack desde 2017, trabalho com as linguagens PHP e JS, utilizando ferramentas como React, Laravel e Vue." /><meta property="og:image" content="http://localhost:3000/assets/images/og-img.jpg" /><meta property="og:image:width" content="100" /><meta property="og:image:height" content="100" /><meta property="og:locale" content="pt_BR" /><style>*, *::before, *::after{ margin: 0; padding: 0; box-sizing: border-box;} :root{ color-scheme: light dark; --dark: #010203; --dark-gray: #2D2D2D; --light: #EFE9E5; --light-gray: #c4c4c4; --primary-light: #00765F; --primary-dark: #00b894; --secondary-light: #ff9f1c; --secondary-dark: #ff4d88; --error: #e71d36;} html{ font-size: 16px; scroll-behavior: smooth;} *:focus{ outline: 0;} body{ background-color: light-dark(var(--light), var(--dark)); color: light-dark(var(--dark), var(--light)); font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;} section{ margin-bottom: 60px; scroll-margin-top: 100px;} .main{ max-width: 600px; margin: 0 auto; margin-top: 60px;} @media screen and (max-width: 860px){ .main{ max-width: 95%; margin: 120px auto 0;}} .heading{ text-align: center; margin-bottom: 80px;} .heading >img{ border-radius: 1000px; width: 200px; height: 200px; object-fit: cover; object-position: center; margin-top: 30px;} .heading >h1, .heading >h2{ line-height: 100%; margin: 0;} .heading >h1{ color: light-dark(var(--dark), var(--light)); font-size: 3rem; margin-bottom: 1rem;} .heading >h1 >em{ font-style: normal; color: light-dark(var(--primary-light), var(--primary-dark));} h3{ font-size: 1.3rem; position: relative; margin-bottom: 2rem;} h3::after{ content: ''; position: absolute; bottom: -5px; left: 0; width: 400px; height: 2px; background-color: light-dark(var(--primary-light), var(--primary-dark)); display: block;} .about >article >p{ text-indent: 2rem; margin-bottom: 1rem;} .portfolio >ul{ list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 1rem; width: 100%; padding: 0;} @media screen and (max-width: 560px){ .portfolio >ul{ grid-template-columns: 100%;}} .btn{ background-color: light-dark(var(--primary-light), var(--primary-dark)); color: light-dark(var(--light), var(--dark)); font-weight: 600; text-decoration: none; padding: 6px 12px; border-radius: 4px; font-size: .9rem; cursor: pointer; transition: 300ms; text-align: center; border: none; appearance: none;} .input-group{ display: flex; flex-direction: column; gap: 10px;} input[type="text"], input[type="email"], textarea{ background-color: light-dark(var(--light-gray), var(--dark-gray)); padding: 6px 12px; border-radius: 4px; font-size: .9rem; border: 1px solid light-dark(var(--dark), var(--light));} textarea{ min-height: 300px; resize: vertical;} input[type="text"]:focus, input[type="email"]:focus, textarea:focus{ border-color: light-dark(var(--primary-light), var(--primary-dark)); outline: 0;} @media screen and (max-width: 560px){ input[type="text"], input[type="email"], textarea{ padding: 20px 20px;} .btn{ padding: 20px 20px;}} .btn:hover{ opacity: 0.8; transition: 300ms;} .btn:focus{ background-color: light-dark(var(--secondary-light), var(--secondary-dark));} .portfolio__card{ background: var(--dark-gray); background-color: light-dark(var(--light-gray), var(--dark-gray)); backdrop-filter: blur(10px); padding: 8px; border-radius: 6px; display: grid; flex-direction: column; gap: 10px;} .portfolio__card >img{ width: 100%; height: 200px; object-fit: cover; object-position: center; border-radius: 4px;} .portfolio__card >article{ display: flex; flex-direction: column; gap: 10px;} .portfolio__card >article >h4{ font-size: 1rem;} .portfolio__card >article >p{ font-size: .8rem;} .portfolio__card >nav{ align-self: flex-end;} .portfolio__card >nav >a{ width: 100%; display: block;} .contact-form{ display: flex; flex-direction: column; gap: 20px;} .contact__grid{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;} .navbar{ display: flex; position: sticky; top: 0; background-color: light-dark(var(--light), var(--dark)); z-index: 3; width: 100%; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; padding: 20px;} @media screen and (max-width: 560px){ .navbar{ display: none;}} .navbar__nav{ display: flex; align-items: center; gap: 12px;} .navbar__nav__links{ display: flex; gap: 20px;} .navbar__nav__social{ display: flex; gap: 10px; align-items: center ;} .navbar__nav a{ color: light-dark(var(--primary-light), var(--primary-dark)); text-decoration: none; font-weight: 600;} .footer{ padding: 20px; display: flex; align-items: center; gap: 12px; flex-direction: column;} .footer p{ text-align: center; font-size: .6rem;} .footer_social{ display: flex; gap: 12px;} .footer_social a{ text-decoration: none;} </style><script src="/assets/js/boxicons.js"></script></head><body><header class="navbar"><svg width="60" height="32.007" viewBox="0 0 15.875 8.469" xmlns="http://www.w3.org/2000/svg"><g><g fill="light-dark(var(--dark), var(--light))" data-v-inspector="components/brand/logo.vue:4:7"><path d="M1.967 5.021L0 3.51v1.51h.002L0 5.023l.487.383.002.009.005-.004 3.86 3.036V6.933z" data-v-inspector="components/brand/logo.vue:5:9"/><path d="M4.353.019L.032 3.484l.963.74 3.358-2.69z" data-v-inspector="components/brand/logo.vue:6:9"/><path d="M9.437.019H7.925l-.62 3.49h1.517zM7.04 5.02l-.383 2.185h.394l-.092.437c-.114.54-.25.537-.473.533l-.047.27c.86.01 1.366.124 1.79-1.88l.326-1.543z" data-v-inspector="components/brand/logo.vue:7:9"/><path d="M15.824 4.997l-.963-.74-3.339 2.674v1.515z" data-v-inspector="components/brand/logo.vue:8:9"/><path d="M11.522.019v1.512l3.346 2.68.987.76.02-.016V3.444h-.001l.001-.002-.486-.382-.002-.01-.005.004z" data-v-inspector="components/brand/logo.vue:9:9"/></g></g></svg><div class="navbar__nav"><nav class="navbar__nav__links"><a href="#sobre-mim">Sobre mim</a><a href="#portfolio">Portfolio</a><a href="#contato">Contato</a></nav><nav class="navbar__nav__social"><a href="https://www.linkedin.com/in/hugolcouto/" target="_blank" title="Linkedin" aria-label="Linkedin"><box-icon name='linkedin' type='logo' size="sm" color="light-dark(var(--dark), var(--light))"></box-icon></a><a href="https://github.com/hugolcouto" target="_blank" title="Github" aria-label="Github"><box-icon name='github' type='logo' size="sm" color="light-dark(var(--dark), var(--light))"></box-icon></a></nav></div></header><main class="main"><header class="heading"><h1>Oi! Eu sou o <em>Hugo</em></h1><h2>Desenvolvedor fullstack</h2><img src="assets/images/hugo.webp" alt=""></header><section class="about" id="sobre-mim"><article><h3>Quem sou eu?</h3><p>Sou natural da cidade de Angra dos Reis, litoral sul do estado do Rio de Janeiro e trabalho com desenvolvimento desde 2017, quando comecei a desenvolver para a web utilizando a plataforma Wordpress. </p><p>Formado em Análise e Desenvolvimento de Sistemas e atualmente cursando MBA em Engenharia de Software, atualmente atudo desenvolvendo soluções utilizando as tecnologias Next, Nuxt, React Native/Expo, Wordpress e Laravel. </p></article></section><section class="portfolio" id="portfolio"><h3>Alguns dos meus trabalhos</h3><ul id="portfolio-content"></ul></section><section class="contact" id="contato"><h3>Gostou? Que tal entrar em contato?</h3><form class="contact-form" id="my-form" action="https://formspree.io/f/myzygqkj" method="POST"><div class="input-group"><label for="name">Nome:</label><input type="text" name="name" id="name" /></div><div class="input-group"><label for="email">Email:</label><input type="email" name="email" id="email" /></div><div class="input-group"><label for="message">Message:</label><textarea name="message" id="message"></textarea></div><button class="btn" id="my-form-button">Submit</button><p id="my-form-status"></p></form></section></main><footer class="footer"><nav class="footer_social"><a href="https://www.linkedin.com/in/hugolcouto/" target="_blank" title="Linkedin" aria-label="Linkedin"><box-icon name='linkedin' type='logo' size="sm" color="light-dark(var(--dark), var(--light))"></box-icon></a><a href="https://github.com/hugolcouto" target="_blank" title="Github" aria-label="Github"><box-icon name='github' type='logo' size="sm" color="light-dark(var(--dark), var(--light))"></box-icon></a></nav><p>&copy; <span id="year"></span>Hugo Couto. Todos os direitos reservados</p></footer><script>fetch('portfolio.json') .then(res=>res.json()) .then(data=>{ document.getElementById('portfolio-content').innerHTML=data.porfolio.map(item=>{ return ` <li class="portfolio__card"><img src="${item.image}" alt="${item.img_alt}"><article><h4>${item.title}</h4><p>${item.description}</p></article><nav><a href="${item.url}" target="_blank" class="btn" title="Abrir ${item.title} em nova aba">Visitar ${item.title} </a></nav></li>`}).join("");}) document.getElementById('year').innerHTML=new Date().getFullYear(); // Form var form=document.getElementById("my-form"); async function handleSubmit(event){ event.preventDefault(); var status=document.getElementById("my-form-status"); var data=new FormData(event.target); fetch(event.target.action,{ method: form.method, body: data, headers:{ 'Accept': 'application/json'}}).then(response=>{ if (response.ok){ status.innerHTML="Thanks for your submission!"; form.reset()} else{ response.json().then(data=>{ if (Object.hasOwn(data, 'errors')){ status.innerHTML=data["errors"].map(error=>error["message"]).join(", ")} else{ status.innerHTML="Oops! There was a problem submitting your form"}})}}).catch(error=>{ status.innerHTML="Oops! There was a problem submitting your form"});} form.addEventListener("submit", handleSubmit) </script></body></html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Couto - Desenvolvedor web</title>
+
+    <!-- Meta tags -->
+    <link
+        rel="apple-touch-icon"
+        sizes="57x57"
+        href="assets/icon/apple-icon-57x57.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="60x60"
+        href="assets/icon/apple-icon-60x60.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="72x72"
+        href="assets/icon/apple-icon-72x72.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="76x76"
+        href="assets/icon/apple-icon-76x76.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="114x114"
+        href="assets/icon/apple-icon-114x114.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="120x120"
+        href="assets/icon/apple-icon-120x120.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="144x144"
+        href="assets/icon/apple-icon-144x144.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="152x152"
+        href="assets/icon/apple-icon-152x152.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/icon/apple-icon-180x180.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="assets/icon/android-icon-192x192.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/icon/favicon-32x32.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="96x96"
+        href="assets/icon/favicon-96x96.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="assets/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/icon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#00b894" />
+    <meta
+        name="msapplication-TileImage"
+        content="assets/icon/ms-icon-144x144.png"
+    />
+
+    <meta
+        name="description"
+        content="Olá! Eu sou o Hugo. Desenvolvedor fullstack desde 2017, trabalho com as linguagens PHP e JS, utilizando ferramentas como React, Laravel e Vue."
+    />
+    <meta
+        name="keywords"
+        content="Hugo Couto, Hugo, hugolcouto, dev, desenvolvedor, front-end, frontend, back-end, backend, fullstack, desenvolvimento, sites, site, app, aplicativo, aplicativos, games, retrogaming"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://hugocouto.dev" />
+    <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="Portuguese" />
+    <meta name="theme-color" content="#00b894" />
+
+    <meta property="og:url" content="https://hugocouto.dev" />
+    <meta property="og:type" content="website" />
+    <meta
+        property="og:title"
+        content="Hugo Couto - Desenvolvedor fullstack"
+    />
+    <meta
+        property="og:description"
+        content="Olá! Eu sou o Hugo. Desenvolvedor fullstack desde 2017, trabalho com as linguagens PHP e JS, utilizando ferramentas como React, Laravel e Vue."
+    />
+    <meta property="og:image" content="http://localhost:3000/assets/images/og-img.jpg" />
+    <meta property="og:image:width" content="100" />
+    <meta property="og:image:height" content="100" />
+    <meta property="og:locale" content="pt_BR" />
+    
+    <!-- CSS -->
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            color-scheme: light dark;
+            --dark: #010203;
+            --dark-gray: #2D2D2D;
+            --light: #EFE9E5;
+            --light-gray: #c4c4c4;
+            --primary-light: #00765F;
+            --primary-dark: #00b894;
+            --secondary-light: #ff9f1c;
+            --secondary-dark: #ff4d88;
+            --error: #e71d36;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        *:focus {
+            outline: 0;
+        }
+
+        body {
+            background-color: light-dark(var(--light), var(--dark));
+            color: light-dark(var(--dark), var(--light));
+            font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        section {
+            margin-bottom: 60px;
+            scroll-margin-top: 100px;
+        }
+
+        .main {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+
+        @media screen and (max-width: 860px) {
+            .main {
+                max-width: 95%;
+                margin: 120px auto 0;
+            }
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .heading > img {
+            border-radius: 1000px;
+            /* width: 200px;
+            height: 200px; */
+            object-fit: cover;
+            object-position: center;
+            margin-top: 30px;
+        }
+
+        .heading > h1,
+        .heading > h2 {
+            line-height: 100%;
+            margin: 0;
+        }
+
+        .heading > h1 {
+            color: light-dark(var(--dark), var(--light));
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .heading > h1 > em {
+            font-style: normal;
+            color: light-dark(var(--primary-light), var(--primary-dark));
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        h3::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 400px;
+            height: 2px;
+            background-color: light-dark(var(--primary-light), var(--primary-dark));
+            display: block;
+        }
+
+        .about > article > p {
+            text-indent: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio > ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            width: 100%;
+            padding: 0;
+        }
+
+        @media screen and (max-width: 560px) {
+            .portfolio > ul {
+                grid-template-columns: 100%;
+            }
+        }
+
+        /* Componentes */
+        .btn {
+            background-color: light-dark(var(--primary-light), var(--primary-dark));
+            color: light-dark(var(--light), var(--dark));
+            font-weight: 600;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: .9rem;
+            cursor: pointer;
+            transition: 300ms;
+            text-align: center;
+            border: none;
+            appearance: none;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            background-color: light-dark(var(--light-gray), var(--dark-gray));
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: .9rem;
+            border: 1px solid light-dark(var(--dark), var(--light));
+        }
+
+        textarea {
+            min-height: 300px;
+            resize: vertical;
+        } 
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: light-dark(var(--primary-light), var(--primary-dark));
+            outline: 0;
+        }
+
+        @media screen and (max-width: 560px) {
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                padding: 20px 20px;
+            }
+
+            .btn {
+                padding: 20px 20px;
+            }
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+            transition: 300ms;
+        }
+
+        .btn:focus {
+            background-color: light-dark(var(--secondary-light), var(--secondary-dark));
+        }
+
+        .portfolio__card {
+            background: var(--dark-gray);
+            background-color: light-dark(var(--light-gray), var(--dark-gray));
+            backdrop-filter: blur(10px);
+            padding: 8px;
+            border-radius: 6px;
+            display: grid;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .portfolio__card > img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 4px;
+        }
+
+        .portfolio__card > article {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .portfolio__card > article > h4 {
+            font-size: 1rem;
+        }
+
+        .portfolio__card > article > p {
+            font-size: .8rem;
+        }
+        
+        .portfolio__card > nav {
+            align-self: flex-end;
+        }
+        
+        .portfolio__card > nav > a {
+            width: 100%;
+            display: block;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .navbar {
+            display: flex;
+            position: sticky;
+            top: 0;
+            background-color: light-dark(var(--light), var(--dark));
+            z-index: 3;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 560px) {
+            .navbar {
+                display: none;
+            }
+        }
+
+        .navbar__nav {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .navbar__nav__links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar__nav__social {
+            display: flex;
+            gap: 10px;
+            align-items: center ;
+        }
+
+        .navbar__nav a {
+            color: light-dark(var(--primary-light), var(--primary-dark));
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .navbar__nav a > svg {
+            fill: light-dark(var(--dark), var(--light));
+        }
+
+        .footer {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-direction: column;
+        }
+
+        .footer  p {
+            text-align: center;
+            font-size: .6rem;
+        }
+
+        .footer_social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer_social a {
+            text-decoration: none;
+        }
+
+        .footer_social a > svg {
+            fill: light-dark(var(--dark), var(--light));
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <svg width="60" height="32.007" viewBox="0 0 15.875 8.469" xmlns="http://www.w3.org/2000/svg"><g><g fill="light-dark(var(--dark), var(--light))" data-v-inspector="components/brand/logo.vue:4:7"><path d="M1.967 5.021L0 3.51v1.51h.002L0 5.023l.487.383.002.009.005-.004 3.86 3.036V6.933z" data-v-inspector="components/brand/logo.vue:5:9"/><path d="M4.353.019L.032 3.484l.963.74 3.358-2.69z" data-v-inspector="components/brand/logo.vue:6:9"/><path d="M9.437.019H7.925l-.62 3.49h1.517zM7.04 5.02l-.383 2.185h.394l-.092.437c-.114.54-.25.537-.473.533l-.047.27c.86.01 1.366.124 1.79-1.88l.326-1.543z" data-v-inspector="components/brand/logo.vue:7:9"/><path d="M15.824 4.997l-.963-.74-3.339 2.674v1.515z" data-v-inspector="components/brand/logo.vue:8:9"/><path d="M11.522.019v1.512l3.346 2.68.987.76.02-.016V3.444h-.001l.001-.002-.486-.382-.002-.01-.005.004z" data-v-inspector="components/brand/logo.vue:9:9"/></g></g></svg>
+        <div class="navbar__nav">
+            <nav class="navbar__nav__links">
+                <a href="#sobre-mim">Sobre mim</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <nav class="navbar__nav__social">
+                <a href="https://www.linkedin.com/in/hugolcouto/" target="_blank" title="Linkedin" aria-label="Linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                </a>
+                <a href="https://github.com/hugolcouto" target="_blank" title="Github" aria-label="Github">
+                    <box-icon name='github' type='logo' size="sm" color="light-dark(var(--dark), var(--light))"></box-icon>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <header class="heading">
+            <h1>Oi! Eu sou o <em>Hugo</em></h1>
+            <h2>Desenvolvedor fullstack</h2>
+            <img src="assets/images/hugo.webp" alt="Foto de perfil do Hugo em preto e branco" width="200" height="200">
+        </header>
+        <section class="about" id="sobre-mim">
+            <article>
+                <h3>Quem sou eu?</h3>
+                <p>
+                    Sou natural da cidade de Angra dos Reis, litoral sul do estado do Rio de Janeiro e trabalho com desenvolvimento desde 2017, quando comecei a desenvolver para a web utilizando a plataforma Wordpress. 
+                </p>
+                <p>
+                    Formado em Análise e Desenvolvimento de Sistemas e atualmente cursando MBA em Engenharia de Software, atualmente atudo desenvolvendo soluções utilizando as tecnologias Next, Nuxt, React Native/Expo, Wordpress e Laravel.
+                </p>
+            </article>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h3>Alguns dos meus trabalhos</h3>
+            <ul id="portfolio-content"></ul>
+        </section>
+        <section class="contact" id="contato">
+            <h3>Gostou? Que tal entrar em contato?</h3>
+            <form class="contact-form" id="my-form" action="https://formspree.io/f/myzygqkj" method="POST">
+                <div class="input-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="input-group">    
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button class="btn" id="my-form-button">Submit</button>
+                <p id="my-form-status"></p>
+                </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer_social">
+            <a href="https://www.linkedin.com/in/hugolcouto/" target="_blank" title="Linkedin" aria-label="Linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+            </a>
+            <a href="https://github.com/hugolcouto" target="_blank" title="Github" aria-label="Github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+            </a>
+        </nav>
+        <p>&copy; <span id="year"></span> Hugo Couto. Todos os direitos reservados</p>
+    </footer>
+ 
+    <script>
+        fetch('portfolio.json')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('portfolio-content').innerHTML = data.porfolio.map(item => {
+                    return `
+                        <li class="portfolio__card">
+                            <img src="${item.image}" alt="${item.img_alt}">
+                            <article>
+                                <h4>${item.title}</h4>
+                                <p>${item.description}</p>
+                            </article>
+                            <nav>
+                                <a href="${item.url}" target="_blank" class="btn" title="Abrir ${item.title} em nova aba">
+                                    Visitar ${item.title}
+                                </a>
+                            </nav>
+                        </li>
+                    `
+                }).join("");
+            })
+
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+
+        // Form
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+            }).then(response => {
+            if (response.ok) {
+                status.innerHTML = "Thanks for your submission!";
+                form.reset()
+            } else {
+                response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                    status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+                })
+            }
+            }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+</body>
+</html>
