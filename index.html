@@ -130,7 +130,8 @@
             --dark-gray: #2D2D2D;
             --light: #EFE9E5;
             --light-gray: #c4c4c4;
-            --primary: #00b894;
+            --primary-light: #00765F;
+            --primary-dark: #00b894;
             --secondary-light: #ff9f1c;
             --secondary-dark: #ff4d88;
             --error: #e71d36;
@@ -197,7 +198,7 @@
 
         .heading > h1 > em {
             font-style: normal;
-            color: var(--primary);
+            color: light-dark(var(--primary-light), var(--primary-dark));
         }
 
         h3 {
@@ -213,7 +214,7 @@
             left: 0;
             width: 400px;
             height: 2px;
-            background-color: var(--primary);
+            background-color: light-dark(var(--primary-light), var(--primary-dark));
             display: block;
         }
 
@@ -239,8 +240,8 @@
 
         /* Componentes */
         .btn {
-            background-color: var(--primary);
-            color: var(--dark);
+            background-color: light-dark(var(--primary-light), var(--primary-dark));
+            color: light-dark(var(--light), var(--dark));
             font-weight: 600;
             text-decoration: none;
             padding: 6px 12px;
@@ -277,7 +278,7 @@
         input[type="text"]:focus,
         input[type="email"]:focus,
         textarea:focus {
-            border-color: var(--primary);
+            border-color: light-dark(var(--primary-light), var(--primary-dark));
             outline: 0;
         }
 
@@ -388,7 +389,7 @@
         }
 
         .navbar__nav a {
-            color: var(--primary);
+            color: light-dark(var(--primary-light), var(--primary-dark));
             text-decoration: none;
             font-weight: 600;
         }
@@ -428,10 +429,10 @@
             </nav>
             <nav class="navbar__nav__social">
                 <a href="https://www.linkedin.com/in/hugolcouto/" target="_blank" title="Linkedin" aria-label="Linkedin">
-                    <box-icon name='linkedin' type='logo' size="sm" color="var(--light)"></box-icon>
+                    <box-icon name='linkedin' type='logo' size="sm" color="light-dark(var(--dark), var(--light))"></box-icon>
                 </a>
                 <a href="https://github.com/hugolcouto" target="_blank" title="Github" aria-label="Github">
-                    <box-icon name='github' type='logo' size="sm" color="var(--light)"></box-icon>
+                    <box-icon name='github' type='logo' size="sm" color="light-dark(var(--dark), var(--light))"></box-icon>
                 </a>
             </nav>
         </div>
@@ -481,10 +482,10 @@
     <footer class="footer">
         <nav class="footer_social">
             <a href="https://www.linkedin.com/in/hugolcouto/" target="_blank" title="Linkedin" aria-label="Linkedin">
-                <box-icon name='linkedin' type='logo' size="sm" color="var(--light)"></box-icon>
+                <box-icon name='linkedin' type='logo' size="sm" color="light-dark(var(--dark), var(--light))"></box-icon>
             </a>
             <a href="https://github.com/hugolcouto" target="_blank" title="Github" aria-label="Github">
-                <box-icon name='github' type='logo' size="sm" color="var(--light)"></box-icon>
+                <box-icon name='github' type='logo' size="sm" color="light-dark(var(--dark), var(--light))"></box-icon>
             </a>
         </nav>
         <p>&copy; <span id="year"></span> Hugo Couto. Todos os direitos reservados</p>
