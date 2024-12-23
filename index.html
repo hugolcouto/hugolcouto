@@ -177,8 +177,6 @@
 
         .heading > img {
             border-radius: 1000px;
-            /* width: 200px;
-            height: 200px; */
             object-fit: cover;
             object-position: center;
             margin-top: 30px;
@@ -522,11 +520,13 @@
                                 <h4>${item.title}</h4>
                                 <p>${item.description}</p>
                             </article>
-                            <nav>
-                                <a href="${item.url}" target="_blank" class="btn" title="Abrir ${item.title} em nova aba">
-                                    Visitar ${item.title}
-                                </a>
-                            </nav>
+                            ${item.url ? `
+                                <nav>
+                                    <a href="${item.url}" target="_blank" class="btn" title="Abrir ${item.title} em nova aba">
+                                        Visitar ${item.title}
+                                    </a>
+                                </nav>
+                            ` : ''}
                         </li>
                     `
                 }).join("");
