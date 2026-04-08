@@ -2,21 +2,16 @@
     <img style="display: block" src="https://raw.githubusercontent.com/hugolcouto/hugolcouto/main/assets/images/logo_cor.png" width="250">
 </div>
 <br/>
-<br/>
 <h1 align="center" style="font-family: ubuntu, verdana, sans-serif"> Hi, I’m Hugo!</h1>
 <div align="center">
   <a href="https://www.linkedin.com/in/hugolcouto">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logoColor=white">
   </a>
   <a href="https://hugocouto.dev/">
-    <img src="
-    https://img.shields.io/badge/hugocouto.dev-00B894?style=flat-square&logoColor=white
-    ">
+    <img src="https://img.shields.io/badge/hugocouto.dev-00B894?style=flat-square&logoColor=white">
   </a>
   <a href="mailto:contato@hugocouto.dev">
-    <img src="
-    https://img.shields.io/badge/contato@hugocouto.dev-EA4335?style=flat-square&logoColor=white
-    ">
+    <img src="https://img.shields.io/badge/contato@hugocouto.dev-EA4335?style=flat-square&logoColor=white">
   </a>
 </div>
 <br/>
