@@ -1,92 +1,43 @@
 <div align="center">
-
-```
-╔═══════════════════════════════════════════════════════╗
-║   HUGO COUTO · ENGENHEIRO DE SOFTWARE FRONT-END       ║
-║   São Paulo, SP · 6+ anos de experiência              ║
-╚═══════════════════════════════════════════════════════╝
-```
-
-[![Portfolio](https://img.shields.io/badge/hugocouto.dev-000000?style=flat-square&logo=safari&logoColor=white)](https://hugocouto.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/hugolcouto)
-[![Email](https://img.shields.io/badge/contato@hugocouto.dev-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:contato@hugocouto.dev)
-
+    <img style="display: block" src="https://raw.githubusercontent.com/hugolcouto/hugolcouto/main/assets/images/logo_cor.png" width="250">
 </div>
-
----
-
-## sobre mim
-
-Sou engenheiro de software front-end sênior com mais de **6 anos** construindo interfaces escaláveis, performáticas e responsivas. Especialista no ecossistema **React.js / Next.js / TypeScript**, com foco em design systems e componentização.
-
-Atualmente em transição para **full stack**, aliando minha base em PHP/Laravel ao aprimoramento em arquitetura de software com **.NET**. Participo ativamente de decisões de arquitetura e liderança técnica em times ágeis com Scrum.
-
----
-
-## stack
-
-### front-end
-
-![React](https://img.shields.io/badge/React.js-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![JavaScript](https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![SASS](https://img.shields.io/badge/SASS/SCSS-CC6699?style=flat-square&logo=sass&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Styled Components](https://img.shields.io/badge/Styled_Components-DB7093?style=flat-square&logo=styled-components&logoColor=white)
-
-### back-end & infraestrutura
-
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
-![REST API](https://img.shields.io/badge/APIs_REST-FF6C37?style=flat-square&logo=postman&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-
-### arquitetura & qualidade
-
-![Design Systems](https://img.shields.io/badge/Design_Systems-0ACF83?style=flat-square&logo=figma&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Scrum](https://img.shields.io/badge/Scrum-6DB33F?style=flat-square&logo=cachet&logoColor=white)
-![a11y](https://img.shields.io/badge/Acessibilidade_a11y-005A9C?style=flat-square&logo=accessibility&logoColor=white)
-![SEO](https://img.shields.io/badge/SEO_técnico-4285F4?style=flat-square&logo=google&logoColor=white)
-
----
-
-## experiência
-
-```
-Meu Retiro          →  Desenvolvedor Full Stack      02/2021 – 03/2026
-Webhub              →  Desenvolvedor Front-end        10/2019 – 02/2021
-Alternativa Digital →  Desenvolvedor Front-end        09/2017 – 10/2019
-```
-
----
-
-## formação
-
-```
-Anhanguera   →  Pós-graduação · Arquitetura de Software em .NET   2026 – 2027 ⏳
-USP ESALQ    →  MBA · Engenharia de Software                       2024 – 2026 ✓
-Estácio      →  Tecnólogo · Análise e Desenvolvimento de Sistemas  2017 – 2019 ✓
-```
-
----
-
-## estatísticas
-
+<br/>
+<br/>
+<h1 align="center" style="font-family: ubuntu, verdana, sans-serif"> Hi, I’m Hugo!</h1>
 <div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=hugolcouto&show_icons=true&theme=transparent&hide_border=true&title_color=000000&text_color=555555&icon_color=000000&hide=contribs)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hugolcouto&layout=compact&theme=transparent&hide_border=true&title_color=000000&text_color=555555)
-
+  <a href="https://www.linkedin.com/in/hugolcouto">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logoColor=white">
+  </a>
+  <a href="https://hugocouto.dev/">
+    <img src="
+    https://img.shields.io/badge/hugocouto.dev-00B894?style=flat-square&logoColor=white
+    ">
+  </a>
+  <a href="mailto:contato@hugocouto.dev">
+    <img src="
+    https://img.shields.io/badge/contato@hugocouto.dev-EA4335?style=flat-square&logoColor=white
+    ">
+  </a>
 </div>
-
----
-
+<br/>
+<p align="justify" style="font-family: ubuntu, verdana, sans-serif">
+I'm a Front-end Software Engineer with over 6 years of experience building scalable, performant, and responsive web interfaces. I specialize in React.js, Next.js, and TypeScript, with a strong focus on component architecture, Design Systems, and performance optimization. I enjoy taking ownership of quality — not just shipping features, but understanding root causes and building things that last.
+</p>
+<p align="justify" style="font-family: ubuntu, verdana, sans-serif">
+Beyond the front-end, I have hands-on experience with back-end technologies like Laravel and REST APIs, and I'm currently expanding into .NET and software architecture. I hold an MBA in Software Engineering from USP and thrive in collaborative, agile environments where technical decisions are made thoughtfully. I read and write in English at an advanced level and hold intermediate conversational proficiency.
+</p>
+<br/>
+<br/>
 <div align="center">
-<sub>🇧🇷 São Paulo &nbsp;·&nbsp; Inglês B2 &nbsp;·&nbsp; disponível para oportunidades</sub>
+    <img src="https://img.shields.io/badge/-.NET-512BD4?logo=dotnet&logoColor=white&style=for-the-badge" alt=".Net">
+    <img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
+    <img src="https://img.shields.io/badge/-React-00D1F7?style=for-the-badge&logo=react&logoColor=white" alt="React">
+    <img src="https://img.shields.io/badge/-Angular-3FB27F?style=for-the-badge&logo=angular&logoColor=white" alt="Angular">
+    <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Javascript">
+    <img src="https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge" alt="Typescript">
+    <img src="https://img.shields.io/badge/-PHP-777bb4?logo=php&logoColor=white&style=for-the-badge" alt="PHP">
+    <img src="https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+    <img src="https://img.shields.io/badge/-CSS-026EB6?logo=css&logoColor=white&style=for-the-badge" alt="CSS">
+    <img src="https://img.shields.io/badge/-SCSS-C76395?logo=sass&logoColor=white&style=for-the-badge" alt="SCSS">
+    <img src="https://img.shields.io/badge/-Flutter-02569B?logo=flutter&logoColor=white&style=for-the-badge" alt="Flutter">                                                                  
 </div>
