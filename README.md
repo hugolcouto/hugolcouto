@@ -35,5 +35,4 @@ Beyond the front-end, I have hands-on experience with back-end technologies like
     <img src="https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
     <img src="https://img.shields.io/badge/-CSS-026EB6?logo=css&logoColor=white&style=for-the-badge" alt="CSS">
     <img src="https://img.shields.io/badge/-SCSS-C76395?logo=sass&logoColor=white&style=for-the-badge" alt="SCSS">
-    <img src="https://img.shields.io/badge/-Flutter-02569B?logo=flutter&logoColor=white&style=for-the-badge" alt="Flutter">                                                                  
 </div>
