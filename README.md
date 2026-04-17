@@ -2,8 +2,10 @@
     <img style="display: block" src="https://raw.githubusercontent.com/hugolcouto/hugolcouto/main/assets/images/logo_cor.png" width="250">
 </div>
 <br/>
-<h1 align="center"> Hi, I’m Hugo!</h1>
+<h1 align="center"> Hi, I’m Hugo! <img src="https://raw.githubusercontent.com/sidbelbase/sidbelbase/master/wave.gif" height="26"> </h1>
+
 <div align="center">
+  <h4>👇 You can find me at 👇</h4>
   <a href="https://www.linkedin.com/in/hugolcouto">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logoColor=white">
   </a>
@@ -16,7 +18,7 @@
 </div>
 <br/>
 <p align="justify">
-I'm a Front-end Software Engineer with over 6 years of experience building scalable, performant, and responsive web interfaces. I specialize in React.js, Next.js, and TypeScript, with a strong focus on component architecture, Design Systems, and performance optimization. I enjoy taking ownership of quality — not just shipping features, but understanding root causes and building things that last.
+I'm a web developer with over 6 years of experience building scalable, performant, and responsive web interfaces. I specialize in React.js, Next.js, and TypeScript, with a strong focus on component architecture, Design Systems, and performance optimization. I enjoy taking ownership of quality — not just shipping features, but understanding root causes and building things that last.
 </p>
 <p align="justify">
 Beyond the front-end, I have hands-on experience with back-end technologies like Laravel and REST APIs, and I'm currently expanding into .NET and software architecture. I hold an MBA in Software Engineering from USP and thrive in collaborative, agile environments where technical decisions are made thoughtfully. I read and write in English at an advanced level and hold intermediate conversational proficiency.
@@ -24,7 +26,7 @@ Beyond the front-end, I have hands-on experience with back-end technologies like
 <br/>
 <br/>
 <div align="center">
-    <img src="https://img.shields.io/badge/-.NET-512BD4?logo=dotnet&logoColor=white&style=for-the-badge" alt=".Net">
+    <img src="https://img.shields.io/badge/-.net-512BD4?logo=dotnet&logoColor=white&style=for-the-badge" alt="C#">
     <img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
     <img src="https://img.shields.io/badge/-React-00D1F7?style=for-the-badge&logo=react&logoColor=white" alt="React">
     <img src="https://img.shields.io/badge/-Vue-3FB27F?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue">
@@ -35,4 +37,5 @@ Beyond the front-end, I have hands-on experience with back-end technologies like
     <img src="https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
     <img src="https://img.shields.io/badge/-CSS-026EB6?logo=css&logoColor=white&style=for-the-badge" alt="CSS">
     <img src="https://img.shields.io/badge/-SCSS-C76395?logo=sass&logoColor=white&style=for-the-badge" alt="SCSS">
+    <img src="https://img.shields.io/badge/-Flutter-5DC8F8?logo=flutter&logoColor=white&style=for-the-badge" alt="SCSS">
 </div>
